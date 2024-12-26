@@ -4,20 +4,34 @@
 
 @layer base {
   body {
-    @apply h-screen;
-    @apply w-screen;
     @apply font-sans;
     @apply bg-neutral-50;
   }
 
-  h1 {
-    @apply font-bold;
+  h1,
+  h2,
+  h3 {
+    @apply font-OpenSansBold;
     @apply text-5xl;
     @apply text-neutral-900;
   }
 
   p {
+    @apply font-OpenSansRegular;
     @apply text-neutral-500;
     @apply text-xl;
   }
+}
+
+@font-face {
+  font-family: "OpenSans-bold";
+  src: url("./fonts/OpenSans-Bold.ttf") format("openType");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("./fonts/OpenSans-Regular.ttf") format("openType");
+  font-style: normal;
+  font-display: swap;
 }
